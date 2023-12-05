@@ -1,0 +1,15 @@
+{
+"lives":[{"name":"live","type":0,"url":"./live/live.txt"}],
+"sites":[
+{"key":"drpy_douban","name":"豆瓣","type":3,"api":"./lib/drpy2.min.js","ext":"./js/豆瓣.js","searchable":0,"changeable":1},
+
+{"key":"drpy_jianpian","name":"荐片","type":3,"api":"./lib/drpy2.min.js","ext":"./js/荐片.js","searchable":1,"changeable":0,"timeout":30},
+{"key":"drpy_cilixiong","name":"磁力熊","type":3,"api":"./lib/drpy2.min.js","ext":"./js/磁力熊.js","searchable":1,"changeable":0,"timeout":30},
+{"key":"drpy_dygang","name":"电影港","type":3,"api":"./lib/drpy2.min.js","ext":"./js/电影港.js","searchable":1,"changeable":0,"timeout":30},
+{"key":"drpy_mp4us","name":"MP4电影","type":3,"api":"./lib/drpy2.min.js","ext":"./js/MP4电影.js","searchable":1,"changeable":0,"timeout":30},
+
+{"key":"lf_search","name":"搜索","type":3,"api":"./lib/lf_search.min.js","searchable":0,"changeable":0},
+{"key":"lf_p2p","name":"磁力","type":3,"api":"./lib/lf_p2p.min.js","searchable":1,"changeable":0,"timeout":30},
+{"key":"lf_live","name":"直播","type":3,"api":"./lib/lf_live.min.js","ext":"./txt/lf_live.txt","searchable":0,"changeable":0}
+]
+}
