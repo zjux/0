@@ -17,8 +17,8 @@ var rule = {
         "User-Agent":"Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36 MicroMessenger/7.0.9.501 NetType/WIFI MiniProgramEnv/Windows WindowsWechat"
     },
     timeout:5000,
-    class_name:'热门电影&热播剧集&热播综艺&电影筛选&电视筛选&电影榜单&电视榜单',
-    class_url:'hot_gaia&tv_hot&show_hot&movie&tv&rank_list_movie&rank_list_tv',
+    class_name:'热门电影&热播剧集&热播综艺&电影榜单&电视榜单&电影筛选&电视筛选',
+    class_url:'hot_gaia&tv_hot&show_hot&rank_list_movie&rank_list_tv&movie&tv',
     filter:{
         'hot_gaia':[{'key':'sort','name':'排序','value':[{'n':'热度','v':'recommend'},{'n':'最新','v':'time'},{'n':'评分','v':'rank'}]},{'key':'area','name':'地区','value':[{'n':'全部','v':'全部'},{'n':'华语','v':'华语'},{'n':'欧美','v':'欧美'},{'n':'韩国','v':'韩国'},{'n':'日本','v':'日本'}]}],
         'tv_hot':[{'key':'type','name':'分类','value':[{'n':'综合','v':'tv_hot'},{'n':'国产剧','v':'tv_domestic'},{'n':'欧美剧','v':'tv_american'},{'n':'日剧','v':'tv_japanese'},{'n':'韩剧','v':'tv_korean'},{'n':'动画','v':'tv_animation'}]}],
