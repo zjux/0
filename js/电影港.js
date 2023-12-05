@@ -17,7 +17,7 @@ var rule = {
 		'Referer': 'https://www.dygang.tv/'
 	},
 	timeout:5000,
-	class_name:'最新电影&经典高清&经典港片&国配电影&国剧&日韩剧&美剧&纪录片&综艺&动漫&1080P&4K',
+	class_name:'最新电影&经典高清&经典港片&国配电影&国产剧&日韩剧&欧美剧&纪录片&综艺&动漫&1080P&4K',
 	class_url:'ys&bd&gp&gy&dsj&dsj1&yx&jilupian&zy&dmq&1080p&4K',
 	play_parse:true,
 	play_json:[{
