@@ -19,7 +19,7 @@ var rule = {
     timeout:5000,
     class_name:'热门电影&热播剧集&热播综艺&电影榜单&电视榜单&电影筛选&电视筛选',
     class_url:'hot_gaia&tv_hot&show_hot&rank_list_movie&rank_list_tv&movie&tv',
-    //filter:{"hot_gaia":[{"key":"area","name":"地区","value":[{"n":"全部","v":""},{"n":"华语","v":"华语"},{"n":"欧美","v":"欧美"},{"n":"日本","v":"日本"},{"n":"韩国","v":"韩国"}]}],"tv":[{"key":"sort","name":"排序","value":[{"n':"综合排序","v":""},{"n":"近期热度","v":"T"},{"n":"首播时间","v":"R"},{"n":"高分优先","v":"S"}]}]},
+    filter:{"hot_gaia":[{"key":"area","name":"地区","value":[{"n":"全部","v":""},{"n":"华语","v":"华语"},{"n":"欧美","v":"欧美"},{"n":"日本","v":"日本"},{"n":"韩国","v":"韩国"}]}],"tv":[{"key":"sort","name":"排序","value":[{"n':"综合排序","v":""},{"n":"近期热度","v":"T"},{"n":"首播时间","v":"R"},{"n":"高分优先","v":"S"}]}]},
     limit:20,
     play_parse:false,
     推荐:'',
