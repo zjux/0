@@ -1,5 +1,5 @@
 var rule = {
-    title:'我的哔哩',
+    title:'哔哩',
     host:'https://api.bilibili.com',
     homeUrl:'/x/web-interface/ranking/v2?rid=0&type=origin',
     url:'/x/web-interface/search/type?search_type=videofyfilter',
