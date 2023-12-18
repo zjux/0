@@ -8,9 +8,9 @@ KBS World,https://kbsworld-ott.akamaized.net/hls/live/2002341/kbsworld/01.m3u8
 X,#genre#
 mashayang,https://edge1-nrt.live.mmcdn.com/live-hls/amlst:mashayang/playlist.m3u8
 hayleex,https://edge1-nrt.live.mmcdn.com/live-hls/amlst:hayleex/playlist.m3u8
-
-lorileen,https://edge1-nrt.live.mmcdn.com/live-hls/amlst:lorileen/playlist.m3u8
 madeline_jackson,https://edge1-nrt.live.mmcdn.com/live-hls/amlst:madeline_jackson/playlist.m3u8
+lorileen,https://edge1-nrt.live.mmcdn.com/live-hls/amlst:lorileen/playlist.m3u8
+
 ichigo_o,https://edge1-nrt.live.mmcdn.com/live-hls/amlst:ichigo_o/playlist.m3u8
 k_kimikooo,https://edge1-nrt.live.mmcdn.com/live-hls/amlst:k_kimikooo/playlist.m3u8
 oda_assuri,https://edge1-nrt.live.mmcdn.com/live-hls/amlst:oda_assuri/playlist.m3u8
@@ -19,3 +19,5 @@ tqla,https://edge1-nrt.live.mmcdn.com/live-hls/amlst:tqla/playlist.m3u8
 angel_luisa,https://edge1-nrt.live.mmcdn.com/live-hls/amlst:angel_luisa/playlist.m3u8
 sexykiska,https://edge1-nrt.live.mmcdn.com/live-hls/amlst:sexykiska/playlist.m3u8
 nao_mi_,https://edge1-nrt.live.mmcdn.com/live-hls/amlst:nao_mi_/playlist.m3u8
+babydoll_laura,https://edge1-nrt.live.mmcdn.com/live-hls/amlst:babydoll_laura/playlist.m3u8
+mia_cloudy,https://edge1-nrt.live.mmcdn.com/live-hls/amlst:mia_cloudy/playlist.m3u8
