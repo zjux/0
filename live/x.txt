@@ -9,3 +9,4 @@ X,#genre#
 mashayang,https://edge1-nrt.live.mmcdn.com/live-hls/amlst:mashayang/playlist.m3u8
 hayleex,https://edge1-nrt.live.mmcdn.com/live-hls/amlst:hayleex/playlist.m3u8
 lorileen,https://edge1-nrt.live.mmcdn.com/live-hls/amlst:lorileen/playlist.m3u8
+madeline_jackson,https://edge1-nrt.live.mmcdn.com/live-hls/amlst:madeline_jackson/playlist.m3u8
