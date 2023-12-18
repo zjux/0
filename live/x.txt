@@ -8,3 +8,4 @@ KBS World,https://kbsworld-ott.akamaized.net/hls/live/2002341/kbsworld/01.m3u8
 X,#genre#
 mashayang,https://edge1-nrt.live.mmcdn.com/live-hls/amlst:mashayang/playlist.m3u8
 hayleex,https://edge1-nrt.live.mmcdn.com/live-hls/amlst:hayleex/playlist.m3u8
+lorileen,https://edge1-nrt.live.mmcdn.com/live-hls/amlst:lorileen/playlist.m3u8
