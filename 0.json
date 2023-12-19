@@ -1,6 +1,6 @@
 {
 "spider":"https://ghproxy.net/https://raw.githubusercontent.com/gaotianliuyun/gao/master/jar/fan.txt",
-"lives":[{"name":"live","type":0,"url":"./live/live.txt"}],
+"lives":[{"name":"0","type":0,"url":"./live/0"}],
 "sites":[
 {"key":"csp_douban","name":"豆瓣","type":3,"api":"csp_DouDou","searchable":0,"changeable":1},
 
