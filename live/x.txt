@@ -28,3 +28,10 @@ prettyshina,https://edge1-nrt.live.mmcdn.com/live-hls/amlst:prettyshina/playlist
 ji_yon_1,https://edge1-nrt.live.mmcdn.com/live-hls/amlst:ji_yon_1/playlist.m3u8
 crazy_sasha,https://edge1-nrt.live.mmcdn.com/live-hls/amlst:crazy_sasha/playlist.m3u8
 redjinaandross,https://edge1-nrt.live.mmcdn.com/live-hls/amlst:redjinaandross/playlist.m3u8
+lucie_beltran,https://edge1-nrt.live.mmcdn.com/live-hls/amlst:lucie_beltran/playlist.m3u8
+eva_fashionista,https://edge1-nrt.live.mmcdn.com/live-hls/amlst:eva_fashionista/playlist.m3u8
+sweet_69billy,https://edge1-nrt.live.mmcdn.com/live-hls/amlst:sweet_69billy/playlist.m3u8
+dakota_blare,https://edge1-nrt.live.mmcdn.com/live-hls/amlst:dakota_blare/playlist.m3u8
+mayabaee1,https://edge1-nrt.live.mmcdn.com/live-hls/amlst:mayabaee1/playlist.m3u8
+xoxo4u_,https://edge1-nrt.live.mmcdn.com/live-hls/amlst:xoxo4u_/playlist.m3u8
+sigmasian,https://edge1-nrt.live.mmcdn.com/live-hls/amlst:sigmasian/playlist.m3u8
