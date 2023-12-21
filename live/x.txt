@@ -6,9 +6,10 @@ NHK World,https://nhkwlive-ojp.akamaized.net/hls/live/2003459/nhkwlive-ojp-en/in
 KBS World,https://kbsworld-ott.akamaized.net/hls/live/2002341/kbsworld/01.m3u8
 
 X,#genre#
-mashayang,https://edge1-nrt.live.mmcdn.com/live-hls/amlst:mashayang/playlist.m3u8
-hotfallingdevil,https://edge1-nrt.live.mmcdn.com/live-hls/amlst:hotfallingdevil/playlist.m3u8
-hayleex,https://edge1-nrt.live.mmcdn.com/live-hls/amlst:hayleex/playlist.m3u8
+★★★★★★★★★★★★★★★★★★★★★★★★
+[168]mashayang,https://edge1-nrt.live.mmcdn.com/live-hls/amlst:mashayang/playlist.m3u8
+[163]hotfallingdevil,https://edge1-nrt.live.mmcdn.com/live-hls/amlst:hotfallingdevil/playlist.m3u8
+[157]hayleex,https://edge1-nrt.live.mmcdn.com/live-hls/amlst:hayleex/playlist.m3u8
 victoriahillova,https://edge1-nrt.live.mmcdn.com/live-hls/amlst:victoriahillova/playlist.m3u8
 sonya_keller,https://edge1-nrt.live.mmcdn.com/live-hls/amlst:sonya_keller/playlist.m3u8
 _1s___,https://edge1-nrt.live.mmcdn.com/live-hls/amlst:_1s___/playlist.m3u8
@@ -32,15 +33,12 @@ oda_assuri,https://edge1-nrt.live.mmcdn.com/live-hls/amlst:oda_assuri/playlist.m
 
 ★★★★★★★★★★★★★★★★★★★★★★★★
 babydoll_laura,https://edge1-nrt.live.mmcdn.com/live-hls/amlst:babydoll_laura/playlist.m3u8
-
 ichigo_o,https://edge1-nrt.live.mmcdn.com/live-hls/amlst:ichigo_o/playlist.m3u8
 shy_dy,https://edge1-nrt.live.mmcdn.com/live-hls/amlst:shy_dy/playlist.m3u8
 tqla,https://edge1-nrt.live.mmcdn.com/live-hls/amlst:tqla/playlist.m3u8
 angel_luisa,https://edge1-nrt.live.mmcdn.com/live-hls/amlst:angel_luisa/playlist.m3u8
-
 nao_mi_,https://edge1-nrt.live.mmcdn.com/live-hls/amlst:nao_mi_/playlist.m3u8
 mia_cloudy,https://edge1-nrt.live.mmcdn.com/live-hls/amlst:mia_cloudy/playlist.m3u8
-
 ji_yon_1,https://edge1-nrt.live.mmcdn.com/live-hls/amlst:ji_yon_1/playlist.m3u8
 crazy_sasha,https://edge1-nrt.live.mmcdn.com/live-hls/amlst:crazy_sasha/playlist.m3u8
 redjinaandross,https://edge1-nrt.live.mmcdn.com/live-hls/amlst:redjinaandross/playlist.m3u8
@@ -54,7 +52,6 @@ indianbeauty20,https://edge1-nrt.live.mmcdn.com/live-hls/amlst:indianbeauty20/pl
 reei__,https://edge1-nrt.live.mmcdn.com/live-hls/amlst:reei__/playlist.m3u8
 jeanfrancoa,https://edge1-nrt.live.mmcdn.com/live-hls/amlst:jeanfrancoa/playlist.m3u8
 sweetbobo1,https://edge1-nrt.live.mmcdn.com/live-hls/amlst:sweetbobo1/playlist.m3u8
-
 ehotlovea,https://edge1-nrt.live.mmcdn.com/live-hls/amlst:ehotlovea/playlist.m3u8
 elaanna,https://edge1-nrt.live.mmcdn.com/live-hls/amlst:elaanna/playlist.m3u8
 miladenver,https://edge1-nrt.live.mmcdn.com/live-hls/amlst:miladenver/playlist.m3u8
@@ -73,7 +70,6 @@ mei_tin,https://edge1-nrt.live.mmcdn.com/live-hls/amlst:mei_tin/playlist.m3u8
 lucynuty,https://edge1-nrt.live.mmcdn.com/live-hls/amlst:lucynuty/playlist.m3u8
 seon_mi,https://edge1-nrt.live.mmcdn.com/live-hls/amlst:seon_mi/playlist.m3u8
 taeni_lara,https://edge1-nrt.live.mmcdn.com/live-hls/amlst:taeni_lara/playlist.m3u8
-
 lulissa,https://edge1-nrt.live.mmcdn.com/live-hls/amlst:lulissa/playlist.m3u8
 sayoko_,https://edge1-nrt.live.mmcdn.com/live-hls/amlst:sayoko_/playlist.m3u8
 sammy_sa,https://edge1-nrt.live.mmcdn.com/live-hls/amlst:sammy_sa/playlist.m3u8
@@ -92,3 +88,7 @@ naughty_skull,https://edge1-nrt.live.mmcdn.com/live-hls/amlst:naughty_skull/play
 classy_medeeea,https://edge1-nrt.live.mmcdn.com/live-hls/amlst:classy_medeeea/playlist.m3u8
 nina_mon,https://edge1-nrt.live.mmcdn.com/live-hls/amlst:nina_mon/playlist.m3u8
 queenieandliam,https://edge1-nrt.live.mmcdn.com/live-hls/amlst:queenieandliam/playlist.m3u8
+xforyoureyesonlyx,https://edge1-nrt.live.mmcdn.com/live-hls/amlst:xforyoureyesonlyx/playlist.m3u8
+bella_adams_,https://edge1-nrt.live.mmcdn.com/live-hls/amlst:bella_adams_/playlist.m3u8
+crimsonkitten,https://edge1-nrt.live.mmcdn.com/live-hls/amlst:crimsonkitten/playlist.m3u8
+innocentprovenguilty,https://edge1-nrt.live.mmcdn.com/live-hls/amlst:innocentprovenguilty/playlist.m3u8
