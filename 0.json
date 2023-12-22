@@ -4,6 +4,7 @@
 {"name":"live","type":0,"url":"./live/live.txt"}
 ],
 "sites":[
+  {"key":"drpy_1","name":"1","type":3,"api":"./lib/drpy2.min.js","ext":"./js/1.js","searchable":1,"changeable":0,"timeout":60},
 {"key":"csp_douban","name":"豆瓣","type":3,"api":"csp_DouDou","searchable":0,"changeable":1},
 {"key":"csp_czzy","name":"厂长","type":3,"api":"csp_Czsapp","ext":"https://www.czzy33.com/","searchable":1,"changeable":1},
 {"key":"csp_ddys","name":"低端","type":3,"api":"csp_Ddrk","searchable":1,"changeable":1},
