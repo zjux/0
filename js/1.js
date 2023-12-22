@@ -57,7 +57,7 @@ var rule = {
             d.push({
                 title: it.title,
                 img: it.path,
-                desc: it.score + ' ' +it.playlist.title,
+                desc: it.score + ' / ' +it.playlist.title,
                 url: it.id
             })
         });
@@ -76,7 +76,7 @@ var rule = {
             d.push({
                 title: it.title,
                 img: it.thumbnail||it.path,
-                desc: it.score + ' ' +it.playlist.title,
+                desc: it.score + ' / ' +it.playlist.title,
                 url: it.id
             })
         });
@@ -140,7 +140,7 @@ var rule = {
             d.push({
                 title: it.title,
                 img: it.thumbnail,
-                desc: it.score + ' ' +it.mask,
+                desc: it.score + ' / ' +it.mask,
                 url: it.id
             })
         });
