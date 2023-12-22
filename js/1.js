@@ -1,101 +1,149 @@
-var rule = {
-	title:'磁力熊[磁]',
-	host:'https://www.cilixiong.com',
-	homeUrl:'/top250/index.html',
-	// url: '/fyclass/index_(fypage-1).html',
-	url: '/fyclassfyfilter-(fypage-1).html',
-	filter_url:'-{{fl.class or "0"}}-{{fl.area or "0"}}',
-	filter:{
-		"1":[{"key":"class","name":"类型","value":[{"n":"全部","v":"0"},{"n":"剧情","v":"1"},{"n":"喜剧","v":"2"},{"n":"惊悚","v":"3"},{"n":"动作","v":"4"},{"n":"爱情","v":"5"},{"n":"犯罪","v":"6"},{"n":"恐怖","v":"7"},{"n":"冒险","v":"8"},{"n":"悬疑","v":"9"},{"n":"科幻","v":"10"},{"n":"家庭","v":"11"},{"n":"奇幻","v":"12"},{"n":"动画","v":"13"},{"n":"战争","v":"14"},{"n":"历史","v":"15"},{"n":"传记","v":"16"},{"n":"音乐","v":"17"},{"n":"歌舞","v":"18"},{"n":"运动","v":"19"},{"n":"西部","v":"20"},{"n":"灾难","v":"21"},{"n":"古装","v":"22"},{"n":"情色","v":"23"},{"n":"同性","v":"24"},{"n":"儿童","v":"25"},{"n":"纪录片","v":"26"}]},{"key":"area","name":"地区","value":[{"n":"全部","v":"0"},{"n":"大陆","v":"1"},{"n":"香港","v":"2"},{"n":"台湾","v":"3"},{"n":"美国","v":"4"},{"n":"日本","v":"5"},{"n":"韩国","v":"6"},{"n":"英国","v":"7"},{"n":"法国","v":"8"},{"n":"德国","v":"9"},{"n":"印度","v":"10"},{"n":"泰国","v":"11"},{"n":"丹麦","v":"12"},{"n":"瑞典","v":"13"},{"n":"巴西","v":"14"},{"n":"加拿大","v":"15"},{"n":"俄罗斯","v":"16"},{"n":"意大利","v":"17"},{"n":"比利时","v":"18"},{"n":"爱尔兰","v":"19"},{"n":"西班牙","v":"20"},{"n":"澳大利亚","v":"21"},{"n":"波兰","v":"22"},{"n":"土耳其","v":"23"},{"n":"越南","v":"24"}]}],
-		"2":[{"key":"class","name":"类型","value":[{"n":"全部","v":"0"},{"n":"剧情","v":"1"},{"n":"喜剧","v":"2"},{"n":"惊悚","v":"3"},{"n":"动作","v":"4"},{"n":"爱情","v":"5"},{"n":"犯罪","v":"6"},{"n":"恐怖","v":"7"},{"n":"冒险","v":"8"},{"n":"悬疑","v":"9"},{"n":"科幻","v":"10"},{"n":"家庭","v":"11"},{"n":"奇幻","v":"12"},{"n":"动画","v":"13"},{"n":"战争","v":"14"},{"n":"历史","v":"15"},{"n":"传记","v":"16"},{"n":"音乐","v":"17"},{"n":"歌舞","v":"18"},{"n":"运动","v":"19"},{"n":"西部","v":"20"},{"n":"灾难","v":"21"},{"n":"古装","v":"22"},{"n":"情色","v":"23"},{"n":"同性","v":"24"},{"n":"儿童","v":"25"},{"n":"纪录片","v":"26"}]},{"key":"area","name":"地区","value":[{"n":"全部","v":"0"},{"n":"大陆","v":"1"},{"n":"香港","v":"2"},{"n":"台湾","v":"3"},{"n":"美国","v":"4"},{"n":"日本","v":"5"},{"n":"韩国","v":"6"},{"n":"英国","v":"7"},{"n":"法国","v":"8"},{"n":"德国","v":"9"},{"n":"印度","v":"10"},{"n":"泰国","v":"11"},{"n":"丹麦","v":"12"},{"n":"瑞典","v":"13"},{"n":"巴西","v":"14"},{"n":"加拿大","v":"15"},{"n":"俄罗斯","v":"16"},{"n":"意大利","v":"17"},{"n":"比利时","v":"18"},{"n":"爱尔兰","v":"19"},{"n":"西班牙","v":"20"},{"n":"澳大利亚","v":"21"},{"n":"波兰","v":"22"},{"n":"土耳其","v":"23"},{"n":"越南","v":"24"}]}]
-	},
-	searchUrl: '/e/search/index.php#classid=1,2&show=title&tempid=1&keyboard=**;post',
-	searchable:2,
-	quickSearch:0,
-	filterable:1,
-	headers:{
-		'User-Agent': 'MOBILE_UA'
-	},
-	timeout:5000,
-	class_name:'电影&剧集&豆瓣电影Top250&IMDB Top250&高分悬疑片&高分喜剧片&高分传记片&高分爱情片&高分犯罪片&高分恐怖片&高分冒险片&高分武侠片&高分奇幻片&高分历史片&高分战争片&高分歌舞片&高分灾难片&高分情色片&高分西部片&高分音乐片&高分科幻片&高分动作片&高分动画片&高分纪录片&冷门佳片',
-	class_url:'1&2&/top250/&/s/imdbtop250/&/s/suspense/&/s/comedy/&/s/biopic/&/s/romance/&/s/crime/&/s/horror/&/s/adventure/&/s/martial/&/s/fantasy/&/s/history/&/s/war/&/s/musical/&/s/disaster/&/s/erotic/&/s/west/&/s/music/&/s/sci-fi/&s/action/&/s/animation/&/s/documentary/&/s/unpopular/',
-	play_parse:true,
-	lazy:'',
-	limit:6,
-	推荐: `js:
-		pdfh=jsp.pdfh;pdfa=jsp.pdfa;pd=jsp.pd;
-		var d = [];
-		var html = request(input);
-		var list = pdfa(html, 'body&&.col');
-		list.forEach(it => {
-			d.push({
-				title: pdfh(it, 'h2&&Text'),
-				desc: pdfh(it, '.me-auto&&Text') + '分 / ' + pdfh(it, '.small&&Text'),
-				// pic_url: pd(it, '.card-img&&style'), // 只有 影视TV&爱佬版 有图片
-				pic_url: /!'/.test(pd(it, '.card-img&&style'))?pd(it, '.card-img&&style'):pd(it, '.card-img&&style').replaceAll("'",""), // 兼容 影视TV&爱佬版 以外的其它壳子
-				url: pd(it, 'a&&href')
-			});
-		})
-		setResult(d);
-	`,
-	一级: `js:
-		pdfh=jsp.pdfh;pdfa=jsp.pdfa;pd=jsp.pd;
-		var d = [];
-		if (MY_CATE !== '1' && MY_CATE !== '2') {
-			let turl = (MY_PAGE === 1)? 'index' : 'index_'+ MY_PAGE;
-			input = HOST + MY_CATE + turl + '.html';
-		}
-		var html = request(input);
-		var list = pdfa(html, 'body&&.col');
-		list.forEach(it => {
-			d.push({
-				title: pdfh(it, 'h2&&Text'),
-				desc: pdfh(it, '.me-auto&&Text') + '分 / ' + pdfh(it, '.small&&Text'),
-				// pic_url: pdfh(it, '.card-img&&style'), // 只有 影视TV&爱佬版 有图片
-				pic_url: /!'/.test(pd(it, '.card-img&&style'))?pd(it, '.card-img&&style'):pd(it, '.card-img&&style').replaceAll("'",""), // 兼容 影视TV&爱佬版 以外的其它壳子
-				url: pd(it, 'a&&href')
-			});
-		})
-		setResult(d);
-	`,
-	二级:{
-		title:'h1&&Text;p.mb-2:eq(4)&&Text',
-		desc:'p.mb-2:eq(1)&&Text;;;p.mb-2:eq(7)&&Text;p.mb-2:eq(5)&&Text',
-		img:'.rounded-2&&src',
-		content:'.mv_card_box&&Text',
-		// tabs:'js:TABS = ["道长磁力"]',
-		// lists:'.mv_down:eq(#id)&&.border-bottom',
-		// list_text:'a&&Text',
-		// list_url:'a&&href',
+/**
+ * 影视TV 超連結跳轉支持
+ * https://t.me/fongmi_offical/
+ * https://github.com/FongMi/Release/tree/main/apk
+ */
 
-		tabs:'js:TABS = ["道长磁力","道长在线预览"]',
-		lists:`js:
-		log(TABS);
-		pdfh=jsp.pdfh;pdfa=jsp.pdfa;pd=jsp.pd;
-		LISTS = [];
-		var dd=[];
-		TABS.forEach(function(tab) {
-			if (/道长磁力/.test(tab)) {
-				var d = pdfa(html, '.mv_down&&.border-bottom');
-				d = d.map(function(it) {
-					var title = pdfh(it, 'a&&Text');
-					log('title >>>>>>>>>>>>>>>>>>>>>>>>>>' + title);
-					var burl = pd(it, 'a&&href');
-					log('burl >>>>>>>>>>>>>>>>>>>>>>>>>>' + burl);
-					return title + '$' + burl
-				});
-				LISTS.push(d)
-			} else if (/道长在线预览/.test(tab)) {
-				var d = pd(html, 'iframe&&src');
-				if (d) {
-					d=['第一集在线播放预览$' + d]
-				} else {
-					d=['没有预览不要点$http://www.sharenice.net/douyin/23852']
-				}
-				LISTS.push(d)
-			}
-		});
-		`,
+var rule = {
+	title: '荐片',
+	host: 'http://api2.rinhome.com',
+	homeUrl: '/api/tag/hand?code=unknown601193cf375db73d&channel=wandoujia',//网站的首页链接,用于分类获取和推荐获取
+	// url:'/api/crumb/list?area=0&category_id=fyclass&page=fypage&type=0&limit=24&fyfilter',
+	url: '/api/crumb/list?page=fypage&type=0&limit=24&fyfilter',
+	class_name: '全部&电影&电视剧&动漫&综艺',     // 筛选 /api/term/ad_fenlei?limit=10&page=1
+	class_url: '0&1&2&3&4',
+	detailUrl: '/api/node/detail?channel=wandoujia&token=&id=fyid',//二级详情拼接链接(json格式用)
+	searchUrl: '/api/video/search?key=**&page=fypage',
+	searchable: 2,
+	quickSearch: 0,
+	filterable: 1,
+	filter: {
+		"0":[{"key":"area","name":"地區","value":[{"n":"全部","v":"0"},{"n":"国产","v":"1"},{"n":"中国香港","v":"3"},{"n":"中国台湾","v":"6"},{"n":"美国","v":"5"},{"n":"韩国","v":"18"},{"n":"日本","v":"2"}]},{"key":"year","name":"年代","value":[{"n":"全部","v":"0"},{"n":"2023","v":"153"},{"n":"2022","v":"101"},{"n":"2021","v":"118"},{"n":"2020","v":"16"},{"n":"2019","v":"7"},{"n":"2018","v":"2"},{"n":"2017","v":"3"},{"n":"2016","v":"22"}]},{"key":"sort","name":"排序","value":[{"n":"热门","v":"hot"},{"n":"评分","v":"rating"},{"n":"更新","v":"update"}]}],
+		"1":[{"key":"cateId","name":"分类","value":[{"n":"全部","v":"1"},{"n":"首推","v":"5"},{"n":"动作","v":"6"},{"n":"喜剧","v":"7"},{"n":"战争","v":"8"},{"n":"恐怖","v":"9"},{"n":"剧情","v":"10"},{"n":"爱情","v":"11"},{"n":"科幻","v":"12"},{"n":"动画","v":"13"}]},{"key":"area","name":"地區","value":[{"n":"全部","v":"0"},{"n":"国产","v":"1"},{"n":"中国香港","v":"3"},{"n":"中国台湾","v":"6"},{"n":"美国","v":"5"},{"n":"韩国","v":"18"},{"n":"日本","v":"2"}]},{"key":"year","name":"年代","value":[{"n":"全部","v":"0"},{"n":"2023","v":"153"},{"n":"2022","v":"101"},{"n":"2021","v":"118"},{"n":"2020","v":"16"},{"n":"2019","v":"7"},{"n":"2018","v":"2"},{"n":"2017","v":"3"},{"n":"2016","v":"22"}]},{"key":"sort","name":"排序","value":[{"n":"热门","v":"hot"},{"n":"评分","v":"rating"},{"n":"更新","v":"update"}]}],
+		"2":[{"key":"cateId","name":"分类","value":[{"n":"全部","v":"2"},{"n":"首推","v":"14"},{"n":"国产","v":"15"},{"n":"港台","v":"16"},{"n":"日韩","v":"17"},{"n":"海外","v":"18"}]},{"key":"area","name":"地區","value":[{"n":"全部","v":"0"},{"n":"国产","v":"1"},{"n":"中国香港","v":"3"},{"n":"中国台湾","v":"6"},{"n":"美国","v":"5"},{"n":"韩国","v":"18"},{"n":"日本","v":"2"}]},{"key":"year","name":"年代","value":[{"n":"全部","v":"0"},{"n":"2023","v":"153"},{"n":"2022","v":"101"},{"n":"2021","v":"118"},{"n":"2020","v":"16"},{"n":"2019","v":"7"},{"n":"2018","v":"2"},{"n":"2017","v":"3"},{"n":"2016","v":"22"}]},{"key":"sort","name":"排序","value":[{"n":"热门","v":"hot"},{"n":"评分","v":"rating"},{"n":"更新","v":"update"}]}],
+		"3":[{"key":"cateId","name":"分类","value":[{"n":"全部","v":"3"},{"n":"首推","v":"19"},{"n":"海外","v":"20"},{"n":"日本","v":"21"},{"n":"国产","v":"22"}]},{"key":"area","name":"地區","value":[{"n":"全部","v":"0"},{"n":"国产","v":"1"},{"n":"中国香港","v":"3"},{"n":"中国台湾","v":"6"},{"n":"美国","v":"5"},{"n":"韩国","v":"18"},{"n":"日本","v":"2"}]},{"key":"year","name":"年代","value":[{"n":"全部","v":"0"},{"n":"2023","v":"153"},{"n":"2022","v":"101"},{"n":"2021","v":"118"},{"n":"2020","v":"16"},{"n":"2019","v":"7"},{"n":"2018","v":"2"},{"n":"2017","v":"3"},{"n":"2016","v":"22"}]},{"key":"sort","name":"排序","value":[{"n":"热门","v":"hot"},{"n":"评分","v":"rating"},{"n":"更新","v":"update"}]}],
+		"4":[{"key":"cateId","name":"分类","value":[{"n":"全部","v":"4"},{"n":"首推","v":"23"},{"n":"国产","v":"24"},{"n":"海外","v":"25"},{"n":"港台","v":"26"}]},{"key":"area","name":"地區","value":[{"n":"全部","v":"0"},{"n":"国产","v":"1"},{"n":"中国香港","v":"3"},{"n":"中国台湾","v":"6"},{"n":"美国","v":"5"},{"n":"韩国","v":"18"},{"n":"日本","v":"2"}]},{"key":"year","name":"年代","value":[{"n":"全部","v":"0"},{"n":"2023","v":"153"},{"n":"2022","v":"101"},{"n":"2021","v":"118"},{"n":"2020","v":"16"},{"n":"2019","v":"7"},{"n":"2018","v":"2"},{"n":"2017","v":"3"},{"n":"2016","v":"22"}]},{"key":"sort","name":"排序","value":[{"n":"热门","v":"hot"},{"n":"评分","v":"rating"},{"n":"更新","v":"update"}]}]
 	},
-	搜索:'.col;h2&&Text;.card-img&&style;.me-auto&&Text;a&&href',
+	filter_url: 'area={{fl.area or "0"}}&sort={{fl.sort or "update"}}&year={{fl.year or "0"}}&category_id={{fl.cateId}}',
+	filter_def: {
+		0:{cateId:'0'},
+		1:{cateId:'1'},
+		2:{cateId:'2'},
+		3:{cateId:'3'},
+		4:{cateId:'4'}
+	},
+	headers: {
+		'User-Agent': 'jianpian-android/350',
+		'JPAUTH': 'y261ow7kF2dtzlxh1GS9EB8nbTxNmaK/QQIAjctlKiEv'
+	},
+	timeout: 5000,
+	limit: 8,
+	play_parse: true,
+	play_json: [{
+		re: '*',
+		json: {
+			parse: 0,
+			jx: 0
+		}
+	}],
+	lazy: '',
+	图片来源: '@Referer=www.jianpianapp.com@User-Agent=jianpian-version353',
+	// 推荐:'json:.video;*;*;*;*',
+	推荐: `js:
+        var d = [];
+        let html = request(input);
+        html = JSON.parse(html).data[0].video;
+        html.forEach(it => {
+            d.push({
+                title: it.title,
+                img: it.path,
+                desc: it.playlist.title + ' ⭐' + it.score,
+                url: it.id
+            })
+        });
+        setResult(d);
+    `,
+	// 一级:'json:data;title;path;playlist.title;id',
+	一级: `js:
+        if (cateObj.tid.endsWith('_clicklink')) {
+            cateObj.tid = cateObj.tid.split('_')[0];
+            input = HOST + '/api/video/search?key=' + cateObj.tid + '&page=' + + MY_PAGE;
+        }
+        var d = [];
+        let html = request(input);
+        html = JSON.parse(html).data;
+        html.forEach(it => {
+            d.push({
+                title: it.title,
+                img: it.thumbnail||it.path,
+                desc: (it.mask || it.playlist.title) + ' ⭐' + it.score,
+                url: it.id
+            })
+        });
+        setResult(d);
+    `,
+	二级: `js:
+        function getLink(data) {
+            let link = data.map(it => {
+                return '[a=cr:' + JSON.stringify({'id':it.name+'_clicklink','name':it.name}) + '/]' + it.name + '[/a]'
+            }).join(', ');
+            return link
+        }
+		try {
+            let html = request(input);
+            html = JSON.parse(html);
+            let node = html.data;
+            VOD = {
+                vod_id: node.id,
+                vod_name: node.title,
+                vod_pic: node.thumbnail,
+                type_name: node.types[0].name,
+                vod_year: node.year.title,
+                vod_area: node.area.title,
+                vod_remarks: node.score,
+                vod_actor: getLink(node.actors),
+                vod_director: getLink(node.directors),
+                vod_content: node.description.strip()
+            };
+            if (typeof play_url === 'undefined') {
+                var play_url = ''
+            }
+            let playMap = {};
+			if (node.have_ftp_ur == 1) {
+				playMap["边下边播超清版"] = node.new_ftp_list.map(it => {
+					return it.title + "$" + (/m3u8/.test(it.url) ? play_url + it.url : "tvbox-xg:" + it.url)
+				}).join('#');
+			}
+			if (node.have_m3u8_ur == 1) {
+				playMap["在线点播普清版"] = node.new_m3u8_list.map(it => {
+					return it.title + "$" + (/m3u8/.test(it.url) ? play_url + it.url : "tvbox-xg:" + it.url)
+				}).join('#');
+			}
+            let playFrom = [];
+            let playList = [];
+            Object.keys(playMap).forEach(key => {
+                playFrom.append(key);
+                playList.append(playMap[key])
+            });
+            VOD.vod_play_from = playFrom.join('$$$');
+            VOD.vod_play_url = playList.join('$$$');
+        } catch (e) {
+            log("获取二级详情页发生错误:" + e.message);
+        }
+	`,
+	// 搜索:'json:data;*;thumbnail;mask;*',
+	搜索: `js:
+        var d = [];
+        let html = request(input);
+        html = JSON.parse(html).data;
+        html.forEach(it => {
+            d.push({
+                title: it.title,
+                img: it.thumbnail,
+                desc: it.mask + ' ⭐' + it.score,
+                url: it.id
+            })
+        });
+        setResult(d);
+    `,
 }
