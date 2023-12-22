@@ -1,7 +1,7 @@
 var rule = {
 	title:'磁力熊',
 	host:'https://www.cilixiong.com',
-	homeUrl:'/',
+	homeUrl:'',
 	url: '/fyclassfyfilter-(fypage-1).html',
 	filter_url:'-{{fl.class or "0"}}-{{fl.area or "0"}}',
 	filter:{
