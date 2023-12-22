@@ -87,7 +87,7 @@ jeanfrancoa,https://edge1-nrt.live.mmcdn.com/live-hls/amlst:jeanfrancoa/playlist
 jee__son,https://edge1-nrt.live.mmcdn.com/live-hls/amlst:jee__son/playlist.m3u8
 ji_yon_1,https://edge1-nrt.live.mmcdn.com/live-hls/amlst:ji_yon_1/playlist.m3u8
 juliabeng1,https://edge1-nrt.live.mmcdn.com/live-hls/amlst:juliabeng1/playlist.m3u8
-k_kimikooo,https://edge1-nrt.live.mmcdn.com/live-hls/amlst:k_kimikooo/playlist.m3u8
+★k_kimikooo,https://edge1-nrt.live.mmcdn.com/live-hls/amlst:k_kimikooo/playlist.m3u8
 katyerave,https://edge1-nrt.live.mmcdn.com/live-hls/amlst:katyerave/playlist.m3u8
 katymolly,https://edge1-nrt.live.mmcdn.com/live-hls/amlst:katymolly/playlist.m3u8
 katyxgold,https://edge1-nrt.live.mmcdn.com/live-hls/amlst:katyxgold/playlist.m3u8
@@ -108,7 +108,7 @@ lucie_beltran,https://edge1-nrt.live.mmcdn.com/live-hls/amlst:lucie_beltran/play
 lucifera1,https://edge1-nrt.live.mmcdn.com/live-hls/amlst:lucifera1/playlist.m3u8
 lucynuty,https://edge1-nrt.live.mmcdn.com/live-hls/amlst:lucynuty/playlist.m3u8
 lulissa,https://edge1-nrt.live.mmcdn.com/live-hls/amlst:lulissa/playlist.m3u8
-madeline_jackson,https://edge1-nrt.live.mmcdn.com/live-hls/amlst:madeline_jackson/playlist.m3u8
+★madeline_jackson,https://edge1-nrt.live.mmcdn.com/live-hls/amlst:madeline_jackson/playlist.m3u8
 mashayang,https://edge1-nrt.live.mmcdn.com/live-hls/amlst:mashayang/playlist.m3u8
 mayabaee1,https://edge1-nrt.live.mmcdn.com/live-hls/amlst:mayabaee1/playlist.m3u8
 mei_tin,https://edge1-nrt.live.mmcdn.com/live-hls/amlst:mei_tin/playlist.m3u8
