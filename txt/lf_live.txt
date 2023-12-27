@@ -1,2 +1,13 @@
 #本地
 ../live/x.txt
+
+#XXX
+https://iptv-org.github.io/iptv/categories/xxx.m3u
+#Japan
+https://iptv-org.github.io/iptv/countries/jp.m3u
+#Krean
+https://iptv-org.github.io/iptv/countries/kr.m3u
+#Russia
+https://iptv-org.github.io/iptv/countries/ru.m3u
+#tw
+https://iptv-org.github.io/iptv/countries/tw.m3u
