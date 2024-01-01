@@ -1,7 +1,7 @@
 {
-"spider":"https://ghproxy.net/https://raw.githubusercontent.com/gaotianliuyun/gao/master/jar/fan.txt",
+//"spider":"https://ghproxy.net/https://raw.githubusercontent.com/gaotianliuyun/gao/master/jar/fan.txt",
 "lives":[
-{"name":"live","type":0,"url":"./live/live.txt"}
+{"name":"0","type":0,"url":"./live/0"}
 ],
 "sites":[
   {"key":"drpy_1","name":"1","type":3,"api":"./lib/drpy2.min.js","ext":"./js/1.js","searchable":1,"changeable":0,"timeout":60},
