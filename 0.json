@@ -1,7 +1,14 @@
 {
 //"spider":"https://ghproxy.net/https://raw.githubusercontent.com/gaotianliuyun/gao/master/jar/fan.txt",
 "lives":[
-{"name":"0","type":0,"url":"./live/0"}
+{"name":"54","type":0,"url":"./live/54"},
+  {"name":"55","type":0,"url":"./live/55"},
+  {"name":"56","type":0,"url":"./live/56"},
+  {"name":"57","type":0,"url":"./live/57"},
+  {"name":"58","type":0,"url":"./live/58"},
+  {"name":"59","type":0,"url":"./live/59"},
+  {"name":"60","type":0,"url":"./live/60"},
+  {"name":"61","type":0,"url":"./live/61"}
 ],
 "sites":[
   {"key":"drpy_1","name":"1","type":3,"api":"./lib/drpy2.min.js","ext":"./js/1.js","searchable":1,"changeable":0,"timeout":60},
