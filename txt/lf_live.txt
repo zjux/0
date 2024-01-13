@@ -5,10 +5,6 @@
 https://iptv-org.github.io/iptv/categories/xxx.m3u
 #Japan
 https://iptv-org.github.io/iptv/countries/jp.m3u
-#Krean
-https://iptv-org.github.io/iptv/countries/kr.m3u
-#Russia
-https://iptv-org.github.io/iptv/countries/ru.m3u
 #tw
 https://iptv-org.github.io/iptv/countries/tw.m3u
 
@@ -16,8 +12,6 @@ https://iptv-org.github.io/iptv/countries/tw.m3u
 
 
 
-#番茄•综合
-http://fanqie.gq/a/1701859592.txt
 #YanG•综合
 https://fongmi.cachefly.net/YanG-1989/m3u/main/Gather.m3u
 #范明明•ipv6
@@ -34,15 +28,3 @@ https://xhdwc.tk/tvlive.txt
 http://home.jundie.top:81/Cat/tv/live.txt
 #范明明•电台
 https://fongmi.cachefly.net/fanmingming/live/main/radio/m3u/index.m3u
-#肥羊•斗鱼
-https://fongmi.cachefly.net/Ftindy/IPTV-URL/main/douyuyqk.m3u
-#肥羊•虎牙
-https://fongmi.cachefly.net/Ftindy/IPTV-URL/main/huyayqk.m3u
-#YanG•斗鱼
-https://fongmi.cachefly.net/YanG-1989/m3u/main/yu.m3u
-#YanG•虎牙
-https://fongmi.cachefly.net/YanG-1989/m3u/main/ya.m3u
-#16万•MV
-https://fongmi.cachefly.net/lystv/short/main/影视/tvb/MTV.txt
-#YuanHsing•油管
-https://fongmi.cachefly.net/YuanHsing/YouTube_to_m3u/main/youtube.m3u
