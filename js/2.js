@@ -2,7 +2,6 @@ var rule = {
 	title:'磁力熊[磁]',
 	host:'https://www.cilixiong.com',
 	homeUrl:'/top250/index.html',
-	// url: '/fyclass/index_(fypage-1).html',
 	url: '/fyclassfyfilter-(fypage-1).html',
 	filter_url:'-{{fl.class or "0"}}-{{fl.area or "0"}}',
 	filter:{
@@ -31,7 +30,6 @@ var rule = {
 			d.push({
 				title: pdfh(it, 'h2&&Text'),
 				desc: pdfh(it, '.me-auto&&Text') + '分 / ' + pdfh(it, '.small&&Text'),
-				// pic_url: pd(it, '.card-img&&style'), // 只有 影视TV&爱佬版 有图片
 				pic_url: /!'/.test(pd(it, '.card-img&&style'))?pd(it, '.card-img&&style'):pd(it, '.card-img&&style').replaceAll("'",""), // 兼容 影视TV&爱佬版 以外的其它壳子
 				url: pd(it, 'a&&href')
 			});
@@ -51,7 +49,6 @@ var rule = {
 			d.push({
 				title: pdfh(it, 'h2&&Text'),
 				desc: pdfh(it, '.me-auto&&Text') + '分 / ' + pdfh(it, '.small&&Text'),
-				// pic_url: pdfh(it, '.card-img&&style'), // 只有 影视TV&爱佬版 有图片
 				pic_url: /!'/.test(pd(it, '.card-img&&style'))?pd(it, '.card-img&&style'):pd(it, '.card-img&&style').replaceAll("'",""), // 兼容 影视TV&爱佬版 以外的其它壳子
 				url: pd(it, 'a&&href')
 			});
@@ -63,19 +60,15 @@ var rule = {
 		desc:'p.mb-2:eq(1)&&Text;;;p.mb-2:eq(7)&&Text;p.mb-2:eq(5)&&Text',
 		img:'.rounded-2&&src',
 		content:'.mv_card_box&&Text',
-		// tabs:'js:TABS = ["道长磁力"]',
-		// lists:'.mv_down:eq(#id)&&.border-bottom',
-		// list_text:'a&&Text',
-		// list_url:'a&&href',
-
-		tabs:'js:TABS = ["道长磁力","道长在线预览"]',
+		
+		tabs:'js:TABS = ["磁力"]',
 		lists:`js:
 		log(TABS);
 		pdfh=jsp.pdfh;pdfa=jsp.pdfa;pd=jsp.pd;
 		LISTS = [];
 		var dd=[];
 		TABS.forEach(function(tab) {
-			if (/道长磁力/.test(tab)) {
+			if (/磁力/.test(tab)) {
 				var d = pdfa(html, '.mv_down&&.border-bottom');
 				d = d.map(function(it) {
 					var title = pdfh(it, 'a&&Text');
@@ -84,14 +77,6 @@ var rule = {
 					log('burl >>>>>>>>>>>>>>>>>>>>>>>>>>' + burl);
 					return title + '$' + burl
 				});
-				LISTS.push(d)
-			} else if (/道长在线预览/.test(tab)) {
-				var d = pd(html, 'iframe&&src');
-				if (d) {
-					d=['第一集在线播放预览$' + d]
-				} else {
-					d=['没有预览不要点$http://www.sharenice.net/douyin/23852']
-				}
 				LISTS.push(d)
 			}
 		});
