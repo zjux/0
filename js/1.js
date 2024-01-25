@@ -1,5 +1,5 @@
 var rule = {
-	title: '',
+	title: '荐片',
 	host: 'http://api2.rinhome.com',
 	homeUrl: '/api/tag/hand?code=unknown601193cf375db73d&channel=wandoujia',
 	url: '/api/crumb/list?page=fypage&type=0&limit=24&fyfilter',
