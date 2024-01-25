@@ -49,7 +49,7 @@ var rule = {
             d.push({
                 title: it.title,
                 img: it.path,
-                desc: it.score + '分 / ' + it.playlist.title,
+		desc: it.playlist.title + ' / ' + it.score,
                 url: it.id
             })
         });
@@ -67,7 +67,7 @@ var rule = {
             d.push({
                 title: it.title,
                 img: it.thumbnail||it.path,
-		desc: it.score + '分 / ' + (it.mask || it.playlist.title),
+		desc: (it.mask || it.playlist.title) + ' / ' + it.score,
                 url: it.id
             })
         });
@@ -125,7 +125,7 @@ var rule = {
             d.push({
                 title: it.title,
                 img: it.thumbnail,
-		desc: it.score + '分 / ' + it.mask,
+		desc: it.mask + ' / ' + it.score,
                 url: it.id
             })
         });
