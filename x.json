@@ -4,7 +4,7 @@
 "sites":[
 {"key":"csp_douban","name":"豆瓣","type":3,"api":"csp_DouDou","searchable":0,"changeable":1},
 
-{"key":"csp_czzy","name":"厂长","type":3,"api":"csp_Czsapp","ext":"https://www.czzy33.com/","searchable":1,"changeable":1},
+{"key":"csp_czzy","name":"厂长","type":3,"api":"csp_Czsapp","ext":"https://www.czzy66.com/","searchable":1,"changeable":1},
 {"key":"csp_bttwo","name":"比特","type":3,"api":"csp_Bttwoo","searchable":1,"changeable":1},
 {"key":"csp_ddys","name":"低端","type":3,"api":"csp_Ddrk","searchable":1,"changeable":1},
 {"key":"csp_libvio","name":"利播","type":3,"api":"csp_Libvio","ext":"https://www.libvio.pro/","searchable":1,"changeable":1},
