@@ -13,11 +13,11 @@ https://iptv-org.github.io/iptv/countries/tw.m3u
 
 
 #YanG•综合
-https://fongmi.cachefly.net/YanG-1989/m3u/main/Gather.m3u
+https://ghproxy.net/https://raw.githubusercontent.com/YanG-1989/m3u/main/Gather.m3u
 #范明明•ipv6
-https://fongmi.cachefly.net/fanmingming/live/main/tv/m3u/ipv6.m3u
+https://ghproxy.net/https://raw.githubusercontent.com/fanmingming/live/main/tv/m3u/ipv6.m3u
 #YueChan•综合
-https://fongmi.cachefly.net/YueChan/Live/main/IPTV.m3u
+https://ghproxy.net/https://raw.githubusercontent.com/YueChan/Live/main/IPTV.m3u
 #Yoursmile•综合
 https://agit.ai/Yoursmile7/TVBox/raw/branch/master/live.txt
 #饭太硬•综合
@@ -27,4 +27,4 @@ https://xhdwc.tk/tvlive.txt
 #俊于•综合
 http://home.jundie.top:81/Cat/tv/live.txt
 #范明明•电台
-https://fongmi.cachefly.net/fanmingming/live/main/radio/m3u/index.m3u
+https://ghproxy.net/https://raw.githubusercontent.com/fanmingming/live/main/radio/m3u/index.m3u
