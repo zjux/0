@@ -6,6 +6,12 @@ Al Jazeera,https://live-hls-web-aje.getaj.net/AJE/01.m3u8
 NHK World,https://nhkwlive-ojp.akamaized.net/hls/live/2003459/nhkwlive-ojp-en/index_4M.m3u8
 KBS World,https://kbsworld-ott.akamaized.net/hls/live/2002341/kbsworld/01.m3u8
 
+Love Nature 4K,https://d18dyiwu97wm6q.cloudfront.net/playlist2160p.m3u8
+Fashion 4K,https://fash2043.cloudycdn.services/slive/ftv_ftv_4k_hevc_73d_42080_default_466_hls.smil/playlist.m3u8
+
+CCTV-8K,http://[2409:8087:2001:20:2800:0:df6e:eb03]/ott.mobaibox.com/PLTV/4/224/3221228165/index.m3u8
+CCTV-4K,http://[2409:8087:2001:20:2800:0:df6e:eb12]/ott.mobaibox.com/PLTV/3/224/3221228228/index.m3u8
+
 X,#genre#
 _1s___,https://edge1-nrt.live.mmcdn.com/live-hls/amlst:_1s___/playlist.m3u8
 _2strangers,https://edge1-nrt.live.mmcdn.com/live-hls/amlst:_2strangers/playlist.m3u8
